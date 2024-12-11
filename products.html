@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة وديعة عوض السيد للتجارة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #3498db;
+        }
+        .product p {
+            color: #555;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #2c3e50;
+        }
+        ul li {
+            display: inline;
+            margin: 10px;
+        }
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مؤسسة وديعة عوض السيد للتجارة</h1>
+    </header>
+
+    <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+    </ul>
+
+    <main>
+        <h2>منتجاتنا</h2>
+        <div class="products">
+            <!-- منتج 1 -->
+            <div class="product">
+                <img src="https://i.postimg.cc/4yqfwJnn/edited-product-image.jpg" alt="بديل الرخام">
+                <h3>بديل الرخام WD_197</h3>
+                <p>وصف منتج بديل الرخام عالي الجودة.</p>
+                <button onclick="addToCart('بديل الرخام WD_197')">أضف إلى السلة</button>
+            </div>
+            <!-- منتج 2 -->
+            <div class="product">
+                <img src="https://i.postimg.cc/4yqfwJnn/edited-product-image.jpg" alt="بديل الخشب">
+                <h3>بديل الخشب WD_198</h3>
+                <p>وصف منتج بديل الخشب الفاخر.</p>
+                <button onclick="addToCart('بديل الخشب WD_198')">أضف إلى السلة</button>
+            </div>
+            <!-- منتج 3 -->
+            <div class="product">
+                <img src="https://i.postimg.cc/4yqfwJnn/edited-product-image.jpg" alt="أكريليك">
+                <h3>أكريليك WD_199</h3>
+                <p>وصف منتج الأكريليك المميز.</p>
+                <button onclick="addToCart('أكريليك WD_199')">أضف إلى السلة</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 مؤسسة وديعة عوض السيد للتجارة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            alert(product + ' تم إضافته إلى السلة!');
+        }
+    </script>
+</body>
+</html>
